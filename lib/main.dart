@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:talk/screens/draw.dart';
 import 'package:talk/screens/home.dart';
 import 'package:talk/screens/speechToText.dart';
 
@@ -14,6 +15,8 @@ void main() {
           return MaterialPageRoute(builder: (context) => Home());
         case '/speectToText':
           return MaterialPageRoute(builder: (context) => SpeechScreen());
+        case '/draw':
+          return MaterialPageRoute(builder: (context) => DrawScreen());
       }
     },
     debugShowCheckedModeBanner: false,

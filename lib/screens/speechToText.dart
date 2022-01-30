@@ -29,7 +29,16 @@ class _SpeechScreenState extends State<SpeechScreen> {
         elevation: 2,
         brightness: Brightness.light,
         backgroundColor: Color(0xffA1E3F8),
-        title: Text('Speech To text'),
+        title: Row(
+          children: [
+            Text('Speech To text'),
+            IconButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/draw');
+                },
+                icon: Icon(Icons.edit)),
+          ],
+        ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: AvatarGlow(

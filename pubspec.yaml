@@ -39,6 +39,10 @@ dependencies:
   path_provider: ^2.0.8
   animated_button: ^0.2.0
   google_fonts: ^2.2.0
+  animated_floatactionbuttons: ^0.1.0
+  image_gallery_saver: ^1.7.1
+  permission_handler: ^8.3.0
+  draw_your_image: ^0.2.0
 
 dev_dependencies:
   flutter_test:
