@@ -21,12 +21,15 @@ class _DrawScreenState extends State<DrawScreen> {
           children: [
             const SizedBox(height: 120),
             Expanded(
-              child: Draw(
-                strokeColor: _currentColor,
-                strokeWidth: _currentWidth,
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                child: Draw(
+                  strokeColor: _currentColor,
+                  strokeWidth: _currentWidth,
+                ),
               ),
             ),
-            const SizedBox(height: 32),
+            const SizedBox(height: 22),
             Wrap(
               spacing: 16,
               children: [
@@ -34,7 +37,8 @@ class _DrawScreenState extends State<DrawScreen> {
                 Colors.blue,
                 Colors.red,
                 Colors.green,
-                Colors.yellow
+                Colors.yellow,
+                Colors.white
               ].map(
                 (color) {
                   return GestureDetector(
@@ -64,7 +68,7 @@ class _DrawScreenState extends State<DrawScreen> {
                 },
               ).toList(),
             ),
-            const SizedBox(height: 32),
+            const SizedBox(height: 22),
             Slider(
               max: 40,
               min: 1,
@@ -75,7 +79,7 @@ class _DrawScreenState extends State<DrawScreen> {
                 });
               },
             ),
-            const SizedBox(height: 60),
+            const SizedBox(height: 40),
           ],
         ),
       ),

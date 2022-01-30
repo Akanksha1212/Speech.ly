@@ -30,6 +30,7 @@ class _SpeechScreenState extends State<SpeechScreen> {
         brightness: Brightness.light,
         backgroundColor: Color(0xffA1E3F8),
         title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text('Speech To text'),
             IconButton(

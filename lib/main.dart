@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:speech_to_text/speech_to_text.dart';
 import 'package:talk/screens/draw.dart';
 import 'package:talk/screens/home.dart';
 import 'package:talk/screens/speechToText.dart';
@@ -12,7 +13,7 @@ void main() {
         case '/':
           return MaterialPageRoute(builder: (context) => MyApp());
         case '/home':
-          return MaterialPageRoute(builder: (context) => Home());
+          return MaterialPageRoute(builder: (context) => SpeechScreen());
         case '/speectToText':
           return MaterialPageRoute(builder: (context) => SpeechScreen());
         case '/draw':
