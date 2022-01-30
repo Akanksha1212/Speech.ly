@@ -1,16 +1,4 @@
-# talk
+# Speech.ly
+### Communicate effectively with Speech.ly
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+It's a simple mobile app that converts speech to text. It can be used by deaf and hard of hearing indivuals to understand what the person next to them is saying and also by the person who want to talk to such indiviuals. There are over 466 million people in the world with disabling hearing loss and with masks becoming a necessity for everyone to prevent spread of COVID-19 it becomes hard for deaf individuals to communicate as they can no more rely on lip reading or facial expressions to understand context and words properly.
