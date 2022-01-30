@@ -21,7 +21,10 @@ class _DrawScreenState extends State<DrawScreen> {
           children: [
             const SizedBox(height: 120),
             Expanded(
-              child: Draw(),
+              child: Draw(
+                strokeColor: _currentColor,
+                strokeWidth: _currentWidth,
+              ),
             ),
             const SizedBox(height: 32),
             Wrap(
@@ -39,6 +42,7 @@ class _DrawScreenState extends State<DrawScreen> {
                       setState(() {
                         _currentColor = color;
                       });
+                      print(color);
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
