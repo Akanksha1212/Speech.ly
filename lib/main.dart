@@ -49,8 +49,19 @@ class _MyAppState extends State<MyApp> {
         decoration: BoxDecoration(color: Color(0xffFBFFE2)),
         // child: Image.asset('assets/images/logo.png'),
         height: double.infinity,
-        child: Image(
-          image: AssetImage("assets/logo.png"),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Image(
+              image: AssetImage("assets/logo.png"),
+            ),
+            Image(
+              image: AssetImage("assets/speechText.png"),
+              width: 300,
+              height: 300,
+            ),
+          ],
         ),
       ),
     );
